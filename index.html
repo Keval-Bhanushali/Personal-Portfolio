@@ -52,24 +52,27 @@
         <svg viewbox="0 0 1000 1000" preserveaspectratio="none">
             <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
         </svg>
-        <div class="preloader-heading">
-            <div class="load-text">
-                <span>K</span>
-                <span>e</span>
-                <span>v</span>
-                <span>a</span>
-                <span>l</span>
-                <span> </span>
-                <span>B</span>
-                <span>h</span>
-                <span>a</span>
-                <span>n</span>
-                <span>u</span>
-                <span>s</span>
-                <span>h</span>
-                <span>a</span>
-                <span>l</span>
-                <span>i</span>
+        <div class="preloader-heading text-center">
+            <div class="load-text d-inline-block">
+                <div class="d-block d-sm-inline"> <!-- Display block on small screens -->
+                    <span>K</span>
+                    <span>e</span>
+                    <span>v</span>
+                    <span>a</span>
+                    <span>l</span>
+                </div>
+                <div class="d-block"> <!-- Always display block -->
+                    <span>B</span>
+                    <span>h</span>
+                    <span>a</span>
+                    <span>n</span>
+                    <span>u</span>
+                    <span>s</span>
+                    <span>h</span>
+                    <span>a</span>
+                    <span>l</span>
+                    <span>i</span>
+                </div>
             </div>
         </div>
     </div>
@@ -110,8 +113,7 @@
                                     <li><a class="nav-link-click" href="#about">about</a></li>
                                     <li><a class="nav-link-click" href="#service">services</a></li>
                                     <li><a class="nav-link-click" href="#works">works</a></li>
-                                    <li><a class="nav-link-click" href="#pricing">Pricing</a></li>
-                                    <li><a class="nav-link-click" href="#blog">Blog</a></li>
+                                    <li><a class="nav-link-click" href="#internships">Internships</a></li>
                                     <li><a class="nav-link-click" href="#contact">Contact</a></li>
                                 </ul>
                             </div>
@@ -139,14 +141,28 @@
                         <h2>Keval Bhanushali</h2>
                         <p>Crafting Digital Experiences from Frontend to Backend.</p>
                         <div class="about-social text-center">
-                            <ul>
-                                <li><a href="https://www.instagram.com/_._keyu_bhanushali/"><i
-                                            class="ri-instagram-fill"></i></a></li>
-                                <li><a href="https://snapchat.com/t/5D3xwfbp"><i class="ri-snapchat-fill"></i></a>
+                            <ul class="list-inline d-flex justify-content-center">
+                                <li class="list-inline-item mx-2">
+                                    <a href="https://www.instagram.com/_._keyu_bhanushali/"
+                                        class="text-decoration-none">
+                                        <i class="ri-instagram-fill fs-3"></i>
+                                    </a>
                                 </li>
-                                <li><a href="linkedin.com/in/keval-bhanushali-627799243"><i
-                                            class="ri-linkedin-fill"></i></a></li>
-                                <li><a href="https://github.com/Keval-Bhanushali"><i class="ri-github-line"></i></a>
+                                <li class="list-inline-item mx-2">
+                                    <a href="https://snapchat.com/t/5D3xwfbp" class="text-decoration-none">
+                                        <i class="ri-snapchat-fill fs-3"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a href="https://linkedin.com/in/keval-bhanushali-627799243"
+                                        class="text-decoration-none">
+                                        <i class="ri-linkedin-fill fs-3"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mx-2">
+                                    <a href="https://github.com/Keval-Bhanushali" class="text-decoration-none">
+                                        <i class="ri-github-line fs-3"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -484,17 +500,17 @@
                     </div>
                 </div>
             </div>
-            <div class="client-logo-wrap">
-                <a class="client-logo-item wow fadeInUp delay-0-2s">
+            <div class="client-logo-wrap d-flex flex-wrap flex-md-nowrap overflow-auto">
+                <a class="client-logo-item wow fadeInUp delay-0-2s mx-2">
                     <img src="assets/images/client-logos/RnD-Technosoft.svg" alt="brand Logo" />
                 </a>
-                <a class="client-logo-item wow fadeInUp delay-0-3s">
+                <a class="client-logo-item wow fadeInUp delay-0-3s mx-2">
                     <img src="assets/images/client-logos/Enjay-IT-Solutions.webp" alt="brand Logo" />
                 </a>
-                <a class="client-logo-item wow fadeInUp delay-0-4s">
+                <a class="client-logo-item wow fadeInUp delay-0-4s mx-2">
                     <img src="assets/images/client-logos/Proactii-Media-LLP.png" alt="brand Logo" />
                 </a>
-                <a class="client-logo-item wow fadeInUp delay-0-5s d-inline-flex align-items-center">
+                <a class="client-logo-item wow fadeInUp delay-0-5s d-inline-flex align-items-center mx-2">
                     <img src="assets/images/client-logos/command-sector-1.png" alt="brand Logo" width="55px"
                         class="mr-2" />
                     <img src="assets/images/client-logos/command-sector.png" alt="brand Logo" width="112px"
@@ -505,7 +521,7 @@
     </div>
     <!-- END BRAND DESIGN AREA -->
     <!-- START Internship AREA -->
-    <section id="blog" class="blog-area">
+    <section id="internships" class="blog-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12">
