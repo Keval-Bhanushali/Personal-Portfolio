@@ -3160,3 +3160,21 @@ ul.blog_pagination li a:hover {
     padding: 25px;
     border: 1px solid var(--border-color);
 }
+
+/* ------------------------------------------------------------------
+     Custom styles moved from inline <head> in index.html
+     - Education read-more clamp
+     - Client logos centering and responsive sizing
+------------------------------------------------------------------ */
+.education-summary.truncate{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.read-more-link{cursor:pointer;color:inherit;text-decoration:underline;margin-left:.5rem}
+
+.client-logo-wrap{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;padding:0 .25rem}
+.client-logo-item{display:flex;align-items:center;justify-content:center;padding:.25rem}
+.client-logo-item img{max-height:56px;max-width:160px;height:auto;width:auto;object-fit:contain;display:block;transition:transform .22s ease,filter .22s ease}
+.client-logo-item.center-logo img{max-height:80px;max-width:200px;transform:scale(1.06)}
+.client-logo-item:hover img{transform:scale(1.05)}
+@media (max-width:768px){
+    .client-logo-item img{max-height:44px;max-width:120px}
+    .client-logo-item.center-logo img{max-height:60px;max-width:150px}
+}
