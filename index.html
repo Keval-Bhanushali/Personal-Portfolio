@@ -38,6 +38,22 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+        <style>
+        /* Education read-more (if used) */
+        .education-summary.truncate{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+        .read-more-link{cursor:pointer;color:inherit;text-decoration:underline;margin-left:.5rem}
+
+        /* Client logos: center group, auto-resize images, emphasize center logo */
+        .client-logo-wrap{display:flex;justify-content:center;align-items:center;gap:1rem;flex-wrap:wrap;padding:0 .25rem}
+        .client-logo-item{display:flex;align-items:center;justify-content:center;padding:.25rem}
+        .client-logo-item img{max-height:56px;max-width:160px;height:auto;width:auto;object-fit:contain;display:block;transition:transform .22s ease,filter .22s ease}
+        .client-logo-item.center-logo img{max-height:80px;max-width:200px;transform:scale(1.06)}
+        .client-logo-item:hover img{transform:scale(1.05)}
+        @media (max-width:768px){
+            .client-logo-item img{max-height:44px;max-width:120px}
+            .client-logo-item.center-logo img{max-height:60px;max-width:150px}
+        }
+        </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -174,7 +190,7 @@
                     <div class="about-content-part wow fadeInUp delay-0-2s">
                         <p>Hello There!</p>
                         <h2>
-                            I’m <span>Keval Bhanushali</span>, a full-stack web developer crafting <span>scalable and
+                            I’m <span>Keval Bhanushali</span>, a PHP/Laravel developer crafting <span>scalable and
                                 user-centric applications</span> with efficient code.
                         </h2>
                         <div class="adress-field">
@@ -206,6 +222,122 @@
         </div>
     </section>
     <!-- / END ABOUT DESIGN AREA -->
+
+    <!-- START RESUME EXPERIENCE DESIGN AREA -->
+    <section id="resume" class="resume-area">
+        <div class="container">
+            <div class="resume-items">
+                <div class="row">
+                    <!-- START EXPERIENCE RESUME DESIGN AREA -->
+                    <div class="col-xl-6 col-md-12">
+                        <div class="single-resume">
+                            <h2>Experience</h2>
+                                <!-- START SINGLE RESUME DESIGN AREA -->
+                                <div class="resume-item wow fadeInUp delay-0-3s">
+                                    <div class="ms-4 icon">
+                                        <i class="ri-book-line"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span class="years">Oct 2023 - Apr 2024</span>
+                                        <h4>Internship</h4>
+                                        <span class="company"> Enjay IT Solutions </span>
+                                        <p>Developed RESTful APIs and Eloquent models for CRM integrations, optimizing queries
+                                            for 30% faster performance. Implemented Laravel Passport authentication and
+                                            assisted in legacy code migration to Laravel 11.</p>
+                                    </div>
+                                </div>
+                                <!-- / END SINGLE RESUME DESIGN AREA -->
+                                <!-- START SINGLE RESUME DESIGN AREA -->
+                                <div class="resume-item wow fadeInUp delay-0-3s">
+                                    <div class=" ms-4 icon">
+                                        <i class="ri-book-line"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span class="years">April 2022 - Sept 2022</span>
+                                        <h4>Junior PHP Developer</h4>
+                                        <span class="company"> RnD Technosoft </span>
+                                        <p>Developed web applications using PHP/Laravel for client projects at this Vapi-based
+                                            IT firm specializing in software, mobile apps, and web dev. Contributed to backend
+                                            features, APIs, and optimizations in a flexible part-time role.</p>
+                                    </div>
+                                </div>
+                                <!-- / END SINGLE RESUME DESIGN AREA -->
+                                <!-- START SINGLE RESUME DESIGN AREA -->
+                                <div class="resume-item wow fadeInUp delay-0-3s">
+                                    <div class="ms-4 icon">
+                                        <i class="ri-book-line"></i>
+                                    </div>
+                                    <div class="content">
+                                        <span class="years">Jan 2022 - Mar 2022</span>
+                                        <h4> Internship </h4>
+                                        <span class="company"> RnD Technosoft </span>
+                                        <p>Hands-on PHP/Laravel internship developing web apps, APIs, and backend features for
+                                            client projects at this Vapi IT firm. Gained practical experience in agile software
+                                            development and database optimization.</p>
+                                    </div>
+                                </div>
+                                <!-- / END SINGLE RESUME DESIGN AREA -->
+                        </div>
+                    </div>
+                    <!-- // END EXPERIENCE RESUME DESIGN AREA -->
+                    <!-- START EDUCATION RESUME DESIGN AREA -->
+                    <div class="col-xl-6 col-md-12">
+                        <div class="single-resume">
+                            <h2>Education</h2>
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2024 - Pursuing</span>
+                                    <h4>Master Of Computer Application</h4>
+                                    <span class="company"> Ajeenkya DY Patil University </span>
+                                    <p >Currently pursuing a Master of Computer Applications (MCA) degree at Ajeenkya DY Patil
+                                        University, focusing on advanced computer science topics and practical applications in
+                                        software development.</p>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2021 - 2024</span>
+                                    <h4>Bachelor Of Computer Applications </h4>
+                                    <span class="company"> Roffel BBA & BCA College </span>
+                                    <p>Completed a Bachelor of Computer Applications (BCA) degree at Roffel BBA & BCA College,
+                                        gaining foundational knowledge in programming, database management, and software
+                                        development principles.</p>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                            <!-- START SINGLE RESUME DESIGN AREA -->
+                            <div class="resume-item wow fadeInUp delay-0-3s">
+                                <div class="icon">
+                                    <i class="ri-book-line"></i>
+                                </div>
+                                <div class="content">
+                                    <span class="years">2019 - 2021</span>
+                                    <h4>Higher Secondary Certificate (HSC)</h4>
+                                    <span class="company"> Shree Maachi Mahajan English Medium School </span>
+                                    <p>Completed Higher Secondary Certificate (HSC) education at Shree Maachi Mahajan English Medium School,
+                                        focusing on science subjects to build a strong foundation for further studies in
+                                        computer applications.</p>
+                                </div>
+                            </div>
+                            <!-- / END SINGLE RESUME DESIGN AREA -->
+                        </div>
+                    </div>
+                    <!-- // END EDUCATION RESUME DESIGN AREA -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / END RESUME EXPERIENCE DESIGN AREA -->
+     
     <!-- START SERVICE DESIGN AREA -->
     <section id="service" class="services-area innerpage-single-area">
         <div class="container">
@@ -254,92 +386,6 @@
     </section>
     <!-- / END SERVICE DESIGN AREA -->
 
-    <!-- START RESUME EXPERIENCE DESIGN AREA -->
-    <section id="resume" class="resume-area">
-        <div class="container">
-            <div class="resume-items">
-                <div class="row">
-                    <!-- START EXPERIENCE RESUME DESIGN AREA -->
-                    <div class="col-xl-6 col-md-12">
-                        <div class="single-resume">
-                            <h2>Experience</h2>
-                            <div class="experience-list">
-                                <!-- START SINGLE RESUME DESIGN AREA -->
-                                <div class="resume-item wow fadeInUp delay-0-3s">
-                                    <div class="icon">
-                                        <i class="ri-book-line"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span class="years">Jun 2023 - Apr 2024</span>
-                                        <h4>Full Stack Web Developer</h4>
-                                        <span class="company"> Command Sector </span>
-                                    </div>
-                                </div>
-                                <!-- / END SINGLE RESUME DESIGN AREA -->
-                                <!-- START SINGLE RESUME DESIGN AREA -->
-                                <div class="resume-item wow fadeInUp delay-0-3s">
-                                    <div class="icon">
-                                        <i class="ri-book-line"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span class="years">May 2023 - Aug 2023</span>
-                                        <h4>Web Developer</h4>
-                                        <span class="company">Proactii Media LLP</span>
-                                    </div>
-                                </div>
-                                <!-- / END SINGLE RESUME DESIGN AREA -->
-                                <!-- START SINGLE RESUME DESIGN AREA -->
-                                <div class="resume-item wow fadeInUp delay-0-3s">
-                                    <div class="icon">
-                                        <i class="ri-book-line"></i>
-                                    </div>
-                                    <div class="content">
-                                        <span class="years">Jan 2022 - Sep 2022</span>
-                                        <h4> Junior Web Developer</h4>
-                                        <span class="company">RnD Technosoft</span>
-                                    </div>
-                                </div>
-                                <!-- / END SINGLE RESUME DESIGN AREA -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- // END EXPERIENCE RESUME DESIGN AREA -->
-                    <!-- START EDUCATION RESUME DESIGN AREA -->
-                    <div class="col-xl-6 col-md-12">
-                        <div class="single-resume">
-                            <h2>Education</h2>
-                            <!-- START SINGLE RESUME DESIGN AREA -->
-                            <div class="resume-item wow fadeInUp delay-0-3s">
-                                <div class="icon">
-                                    <i class="ri-book-line"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="years">2024 - Pursuing</span>
-                                    <h4>Master Of Computer Application</h4>
-                                    <span class="company">Ajeenkya DY Patil University</span>
-                                </div>
-                            </div>
-                            <!-- / END SINGLE RESUME DESIGN AREA -->
-                            <!-- START SINGLE RESUME DESIGN AREA -->
-                            <div class="resume-item wow fadeInUp delay-0-3s">
-                                <div class="icon">
-                                    <i class="ri-book-line"></i>
-                                </div>
-                                <div class="content">
-                                    <span class="years">2021 - 2024</span>
-                                    <h4>Bachelor Of Computer Applications </h4>
-                                    <span class="company">Roffel BBA & BCA College</span>
-                                </div>
-                            </div>
-                            <!-- / END SINGLE RESUME DESIGN AREA -->
-                        </div>
-                    </div>
-                    <!-- // END EDUCATION RESUME DESIGN AREA -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / END RESUME EXPERIENCE DESIGN AREA -->
     <!-- START SKILL DESIGN AREA -->
     <section id="skills" class="skill-area">
         <div class="container">
@@ -359,56 +405,48 @@
                                 <div class="skill-item wow fadeInUp delay-0-2s">
                                     <img src="assets/images/skills/html.png" height="50px" alt="Skill" />
                                     <h5>HTML</h5>
-                                    <span class="percent">99%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-3s">
                                     <img src="assets/images/skills/css.png" height="50px" alt="Skill" />
                                     <h5>CSS</h5>
-                                    <span class="percent">93%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-4s">
                                     <img src="assets/images/skills/bootstrap.png" height="50px" alt="Skill" />
                                     <h5>BootStrap</h5>
-                                    <span class="percent">53%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-5s">
                                     <img src="assets/images/skills/javascript.png" height="50px" alt="Skill" />
                                     <h5>JavaScript</h5>
-                                    <span class="percent">74%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-2s">
                                     <img src="assets/images/skills/jquery.png" height="50px" alt="Skill" />
                                     <h5>Jquery</h5>
-                                    <span class="percent">95%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-3s">
                                     <img src="assets/images/skills/ajax.png" height="50px" alt="Skill" />
                                     <h5>Ajax</h5>
-                                    <span class="percent">96%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-4s">
                                     <img src="assets/images/skills/php.png" height="50px" alt="Skill" />
                                     <h5>PHP</h5>
-                                    <span class="percent">92%</span>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 col-xs-12">
                                 <div class="skill-item wow fadeInUp delay-0-5s">
                                     <img src="assets/images/skills/laravel.png" height="50px" alt="Skill" />
                                     <h5>Laravel</h5>
-                                    <span class="percent">84%</span>
                                 </div>
                             </div>
                         </div>
@@ -496,7 +534,7 @@
                 <div class="col-xl-12">
                     <div class="section-title text-center pt-5 mb-65 wow fadeInUp delay-0-2s">
                         <p>Company I work</p>
-                        <h2>4 Global Clients</h2>
+                        <h2>2 Global Clients</h2>
                     </div>
                 </div>
             </div>
@@ -504,10 +542,10 @@
                 <a class="client-logo-item wow fadeInUp delay-0-2s mx-2">
                     <img src="assets/images/client-logos/RnD-Technosoft.svg" alt="brand Logo" />
                 </a>
-                <a class="client-logo-item wow fadeInUp delay-0-3s mx-2">
+                <a class="client-logo-item center-logo wow fadeInUp delay-0-3s mx-2">
                     <img src="assets/images/client-logos/Enjay-IT-Solutions.webp" alt="brand Logo" />
                 </a>
-                <a class="client-logo-item wow fadeInUp delay-0-4s mx-2">
+                <!-- <a class="client-logo-item wow fadeInUp delay-0-4s mx-2">
                     <img src="assets/images/client-logos/Proactii-Media-LLP.png" alt="brand Logo" />
                 </a>
                 <a class="client-logo-item wow fadeInUp delay-0-5s d-inline-flex align-items-center mx-2">
@@ -515,54 +553,11 @@
                         class="mr-2" />
                     <img src="assets/images/client-logos/command-sector.png" alt="brand Logo" width="112px"
                         height="36px" />
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
     <!-- END BRAND DESIGN AREA -->
-    <!-- START Internship AREA -->
-    <section id="internships" class="blog-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12">
-                    <div class="section-title text-center wow fadeInUp delay-0-2s">
-                        <p>Internship Experience</p>
-                        <h2>My Internships</h2>
-                    </div>
-                </div>
-            </div>
-            <!-- START SINGLE Internship AREA -->
-            <div class="row blog-post-box align-items-center">
-                <div class="col-lg-12">
-                    <div class="blog-post-caption">
-                        <div class="internship-post-caption">
-                            <h3>Duration: October 2022 - April 2023</h3>
-                            <h2><a class="link-decoration" href="#">Internship at Enjay IT Solution</a></h2>
-                            <p>Worked on creating dynamic and fully functional websites, focusing on backend
-                                development, integrating databases, and ensuring real-time data updates for seamless
-                                user experience.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- START SINGLE Internship AREA -->
-            <!-- START SINGLE Internship AREA -->
-            <div class="row blog-post-box align-items-center">
-                <div class="col-lg-12">
-                    <div class="blog-post-caption">
-                        <div class="internship-post-caption">
-                            <h3>Duration: July 2021 - December 2021</h3>
-                            <h2><a class="link-decoration" href="#">Internship at RnD Technosoft</a></h2>
-                            <p>Worked on building dynamic websites, focusing on responsive web applications, and
-                                integrated client-side features using JavaScript and AJAX.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- START SINGLE Internship AREA -->
-        </div>
-    </section>
-    <!-- / END Internship AREA -->
     <!-- START CONTACT DESIGN AREA -->
     <section id="contact" class="contact-area">
         <div class="container">
@@ -586,7 +581,7 @@
                                             <i class="ri-map-pin-line"></i>
                                         </div>
                                         <h2>Current Location:</h2>
-                                        <p><a href="https://www.google.com/maps?q=Pune" target="_blank">Pune</a></p>
+                                        <p><a href="https://www.google.com/maps?q=Vapi" target="_blank">Vapi</a></p>
                                     </div>
                                 </div>
                                 <!-- / END CONTACT SINGLEDESIGN AREA -->
@@ -650,9 +645,7 @@
                 <div class="col-lg-12 col-sm-12 col-xs-12">
                     <h2 class="map_title">View My Live Map Location</h2>
                     <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17006305672!2d73.69815160415013!3d18.52454503774788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1733252375122!5m2!1sen!2sin"
-                            style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119682.62108135078!2d72.83396411591589!3d20.37951240705407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce2c01246603%3A0xca6d49eb7baace15!2sVapi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1766939366758!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         <h2 class="close_btn">Hide Map</h2>
                     </div>
                 </div><!-- END COL-->
@@ -668,7 +661,7 @@
                     <div class="col-lg-6">
                         <div class="copyright-text">
                             <p>
-                                Copyright @2024, <a href="index.html">Keval Bhanushali</a> All
+                                Copyright © <span id="currentYear"></span>, <a href="index.html">Keval Bhanushali</a> All
                                 Rights Reserved.
                             </p>
                         </div>
@@ -717,6 +710,12 @@
     <script src="assets/js/wow.min.js"></script>
     <!-- SCRIPT JS-->
     <script src="assets/js/script.js"></script>
+        <script>
+        (function(){
+            var el = document.getElementById('currentYear');
+            if(el) el.textContent = new Date().getFullYear();
+        })();
+        </script>
 </body>
 
 </html>
