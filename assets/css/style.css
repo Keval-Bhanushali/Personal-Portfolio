@@ -27,6 +27,35 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 
+/*
+* ----------------------------------------------------------------------------------------
+Author       : Themesvila
+Template Name: Dorbesh - Personal Portfolio HTML Template
+Version      : 1.0                                          
+* ----------------------------------------------------------------------------------------
+*/
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.COMMON CSS STYLE
+* 03.MENU CSS STYLE
+* 04.HEADER CSS STYLE
+* 05.ABOUT CSS STYLE
+* 06.SERVICE CSS STYLE
+* 07.SKILL CSS STYLE
+* 08.RESUME CSS STYLE
+* 09.PORTFOLIO CSS STYLE
+* 10.TESTIMONIALS CSS STYLE
+* 11.PRICING CSS STYLE
+* 12.CLIENTS CSS STYLE
+* 13.CONTACT CSS STYLE
+* 14.FOOTER CSS STYLE
+* 15.PRELOADER & BOUNCE CCS STYLE
+* 16.BLOG CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -34,16 +63,16 @@ Version      : 1.0
 * ----------------------------------------------------------------------------------------
 */
 :root {
-    --main-color: #444;
-    --heading-color: #000;
-    --primary-color: #448C74;
-    --lighter-color: #444;
-    --subtitle-color: #444;
-    --black-color: #000;
-    --border-color: rgba(119, 119, 125, .2);
-    --button-border: rgba(119, 119, 125, .2);
-    --body-background: #ECF3F1;
-    --grey-bg: #E6EAEE;
+    --main-color: #475569;
+    --heading-color: #0f172a;
+    --primary-color: #0f172a;
+    --lighter-color: #64748b;
+    --subtitle-color: #334155;
+    --black-color: #0f172a;
+    --border-color: rgba(226, 232, 240, 0.8);
+    --button-border: rgba(15, 23, 42, 0.4);
+    --body-background: #f8fafc;
+    --grey-bg: #f1f5f9;
 }
 
 * {
@@ -1283,7 +1312,7 @@ html {
 }
 
 .about-image-part img {
-	border: 2px dashed #448C74;
+	border: 2px dashed var(--primary-color);
 	padding:10px;
 	border-radius: 50%;
 	margin-bottom: 30px;
@@ -1342,7 +1371,7 @@ color: transparent;
 .adress-field ul li {}
 
 .adress-field ul li i {
-    color: #448C74;
+    color: var(--primary-color);
     margin-right: 10px;
     font-size: 13px;
 }
@@ -1515,7 +1544,7 @@ color: transparent;
 
 .service-item i {
     font-size: 60px;
-    color: #448C74;
+    color: var(--primary-color);
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -3191,20 +3220,21 @@ ul.blog_pagination li a:hover {
 
 .project-tech-badge {
     display: inline-block;
-    padding: 3px 8px;
-    font-size: 11px;
-    font-weight: 500;
-    border-radius: 6px;
-    background: rgba(68, 140, 116, 0.08);
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: rgba(15, 23, 42, 0.04);
     color: var(--primary-color);
-    border: 1px solid rgba(68, 140, 116, 0.15);
+    border: 1px solid rgba(15, 23, 42, 0.1);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
 
 .project-item.style-two:hover .project-tech-badge {
-    background: rgba(68, 140, 116, 0.15);
+    background: rgba(15, 23, 42, 0.1);
     border-color: var(--primary-color);
 }
 
@@ -3217,7 +3247,7 @@ ul.blog_pagination li a:hover {
 
 .project-item.style-two:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 30px rgba(68, 140, 116, 0.12);
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
     border-color: var(--primary-color);
 }
 
@@ -3242,3 +3272,138 @@ ul.blog_pagination li a:hover {
     transform: scale(1.15);
 }
 
+
+/* ==========================================================================
+   MODERN LIGHT DEVELOPER THEME & ANIMATIONS OVERRIDES
+   ========================================================================== */
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+    border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Floating profile picture animation */
+@keyframes profileFloat {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-10px) rotate(1deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+.about-image-part img {
+    animation: profileFloat 6s ease-in-out infinite !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Pulsing "Available for Work" status dot */
+@keyframes statusPulse {
+    0% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.3); }
+    100% { opacity: 0.6; transform: scale(1); }
+}
+.adress-field ul li i {
+    animation: statusPulse 2s infinite ease-in-out !important;
+    display: inline-block !important;
+}
+
+/* Glassmorphic Sticky Header */
+.main-header.fixed-header {
+    background: rgba(248, 250, 252, 0.85) !important;
+    backdrop-filter: blur(12px) -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Premium Card hover lifts and soft shadows */
+.about-image-part, 
+.about-content-part, 
+.about-content-part-bottom, 
+.service-item, 
+.skill-item, 
+.project-item.style-two, 
+.single-resume {
+    background-color: #ffffff !important;
+    border: 1px solid rgba(226, 232, 240, 0.8) !important;
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.04) !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.about-image-part:hover, 
+.about-content-part:hover, 
+.about-content-part-bottom:hover, 
+.service-item:hover, 
+.skill-item:hover, 
+.project-item.style-two:hover, 
+.single-resume:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.04) !important;
+    border-color: rgba(15, 23, 42, 0.2) !important;
+}
+
+/* Micro-interaction on service icons */
+.service-item i {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+.service-item:hover i {
+    transform: scale(1.15) translateY(-5px);
+}
+
+/* Beautiful modern Tech Badges styling */
+.project-tech-badge {
+    background: rgba(15, 23, 42, 0.04) !important;
+    color: var(--primary-color) !important;
+    border: 1px solid rgba(15, 23, 42, 0.08) !important;
+    padding: 4px 12px !important;
+    border-radius: 9999px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+    transition: all 0.3s ease !important;
+}
+.project-tech-badge:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* Modern Gradient Theme Buttons with Lift */
+.theme-btn {
+    background: #0f172a !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 14px 30px !important;
+    border-radius: 30px !important;
+    box-shadow: 0 4px 14px 0 rgba(15, 23, 42, 0.15) !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: all 0.3s ease !important;
+}
+.theme-btn:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px 0 rgba(15, 23, 42, 0.25) !important;
+    filter: brightness(1.15) !important;
+    background: #000000 !important;
+}
+.theme-btn:active {
+    transform: translateY(0px) !important;
+}
+
+/* Modern typography adjustments */
+.about-content-part h2 span {
+    -webkit-text-stroke: 1.2px var(--primary-color) !important;
+    color: transparent !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: initial !important;
+    font-weight: 800;
+}
